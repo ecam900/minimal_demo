@@ -1,7 +1,5 @@
 'use client';
 import { motion } from 'framer-motion';
-import { usePathname } from 'next/navigation';
-import { useEffect, useMemo } from 'react';
 
 export default function Template({ children }: { children: React.ReactNode }) {
   return (

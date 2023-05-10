@@ -54,9 +54,11 @@ const Expectation: FC = () => {
     <>
       <h2 className='text-2xl font-bold'>Expectation</h2>
       <p>
-        Cat fact should get revalidated every second. It is placed inside a{' '}
+        The fetcher in{' '}
+        <span className='font-mono text-red-800'>./fetchers/getCatFact.ts</span> is set
+        for `revalidate: 1` . In addition it is placed inside a{' '}
         <span className='font-mono text-red-800'>`template.tsx`</span>, so it should
-        remount every time the child component changes
+        remount every time the child component changes.
       </p>
     </>
   );
@@ -66,13 +68,7 @@ const Observed: FC = () => {
   return (
     <>
       <h2 className='text-2xl font-bold'>Observed behavior</h2>
-      <p>
-        When changing pages, the{' '}
-        <span className='font-mono text-red-800'>template.tsx</span> successfully
-        rerenders the children components. If you change routes, the revalidation seems to
-        work as expected - but only once or twice. After that, the only way to revalidate
-        the page seems to be a hard refresh.
-      </p>
+      <p>When changing pages, it does not revalidate the fetch request.</p>
     </>
   );
 };
