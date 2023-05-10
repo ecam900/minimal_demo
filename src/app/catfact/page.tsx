@@ -1,11 +1,11 @@
+import getCatFact from '@/fetchers/getCatFact';
+
 export default async function Dashboard() {
-  const blep = await fetch('https://catfact.ninja/fact', { next: { revalidate: 1 } });
-  const blepJson = await blep.json();
-  console.log(blepJson);
+  const catFact = await getCatFact();
 
   return (
     <div>
-      <h1 className='text-4xl'>😺 {blepJson.fact}</h1>
+      <h1 className='text-4xl'>😺 {catFact}</h1>
     </div>
   );
 }
