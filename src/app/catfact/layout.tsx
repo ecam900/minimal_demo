@@ -7,9 +7,9 @@ export default function DashboardLayout({
   children: ReactNode;
 }) {
   return (
-    <section className='container mx-auto max-w-6xl'>
+    <section className='container mx-auto max-w-6xl h-full'>
       <CatFactMenu />
-      <div className={'py-8 w-full h-[40vh] px-4'}>{children}</div>
+      <div className={'py-8 w-full px-4'}>{children}</div>
     </section>
   );
 }

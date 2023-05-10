@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={`${montserrat.className} flex flex-col min-h-screen`}>
+      <body className={`${montserrat.className} flex flex-col min-h-screen [&>*]:px-2`}>
         <nav className='container max-w-6xl mx-auto py-6'>
           <Link href='/'>
             <p className='text-3xl'>minimal_demo.</p>
