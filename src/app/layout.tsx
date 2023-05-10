@@ -37,7 +37,7 @@ const Objectives: FC = () => {
     <>
       <h1 className='text-3xl font-bold'>Objectives</h1>
       <p>
-        Demonstrate bug{' '}
+        Demonstrate{' '}
         <a
           className='underline underline-offset-4 decoration-sky-500'
           href='https://github.com/vercel/next.js/issues/49417'
