@@ -8,9 +8,7 @@ export default function DashboardLayout({
 }) {
   return (
     <section className='container mx-auto max-w-6xl'>
-      {/* Include shared UI here e.g. a header or sidebar */}
       <CatFactMenu />
-
       <div className={'py-8 w-full h-[40vh] px-4'}>{children}</div>
     </section>
   );
